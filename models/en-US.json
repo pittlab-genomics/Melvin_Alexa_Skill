@@ -75,6 +75,59 @@
           ]
         },
         {
+          "name": "CNVAmplificationGeneIntent",
+          "slots": [
+            {
+              "name": "cancer",
+              "type": "CANCERS"
+            },
+            {
+              "name": "gene",
+              "type": "GENES"
+            }
+          ],
+          "samples": [
+            "What percentage of {cancer} cancer patients have an amplification in {gene}",
+            "What percentage of {cancer} cancer patients have an amplification at {gene}"
+          ]
+        },
+        {
+          "name": "CNVDeletionGeneIntent",
+          "slots": [
+            {
+              "name": "cancer",
+              "type": "CANCERS"
+            },
+            {
+              "name": "gene",
+              "type": "GENES"
+            }
+          ],
+          "samples": [
+            "What percentage of {cancer} cancer patients have a deletion in {gene}",
+            "What percentage of {cancer} cancer patients have a deletion at {gene} "
+          ]
+        },
+        {
+          "name": "CNVAlterationGeneIntent",
+          "slots": [
+            {
+              "name": "cancer",
+              "type": "CANCERS"
+            },
+            {
+              "name": "gene",
+              "type": "GENES"
+            }
+          ],
+          "samples": [
+            "What percentage of {cancer} cancer patients have copy number changes in {gene}",
+            "What percentage of {cancer} cancer patients have copy number changes at {gene}",
+            "What percentage of {cancer} cancer patients have copy number alterations in {gene}",
+            "What percentage of {cancer} cancer patients have copy number alterations at {gene}"
+          ]
+        },
+        {
           "name": "SearchCancerTermIntent",
           "slots": [
             {
