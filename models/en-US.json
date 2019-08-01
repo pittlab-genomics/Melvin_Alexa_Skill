@@ -24,7 +24,7 @@
                     "samples": []
                 },
                 {
-                    "name": "searchGeneIntent",
+                    "name": "SearchGeneIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -37,7 +37,7 @@
                     ]
                 },
                 {
-                    "name": "averageGeneExpressionIntent",
+                    "name": "AverageGeneExpressionIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -54,7 +54,7 @@
                     ]
                 },
                 {
-                    "name": "cnvAmplificationGeneIntent",
+                    "name": "CNVAmplificationGeneIntent",
                     "slots": [
                         {
                             "name": "study",
@@ -71,7 +71,7 @@
                     ]
                 },
                 {
-                    "name": "cnvDeletionGeneIntent",
+                    "name": "CNVDeletionGeneIntent",
                     "slots": [
                         {
                             "name": "study",
@@ -88,7 +88,7 @@
                     ]
                 },
                 {
-                    "name": "cnvAlterationGeneIntent",
+                    "name": "CNVAlterationGeneIntent",
                     "slots": [
                         {
                             "name": "study",
@@ -107,7 +107,7 @@
                     ]
                 },
                 {
-                    "name": "mutationGeneCountIntent",
+                    "name": "MutationGeneCountIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -121,7 +121,7 @@
                     ]
                 },
                 {
-                    "name": "mutationStudyGeneCountIntent",
+                    "name": "MutationStudyGeneCountIntent",
                     "slots": [
                         {
                             "name": "study",
@@ -139,7 +139,7 @@
                     ]
                 },
                 {
-                    "name": "mutationGenePercentIntent",
+                    "name": "MutationGenePercentIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -153,7 +153,7 @@
                     ]
                 },
                 {
-                    "name": "mutationStudyGenePercentIntent",
+                    "name": "MutationStudyGenePercentIntent",
                     "slots": [
                         {
                             "name": "study",
@@ -172,7 +172,7 @@
                     ]
                 },
                 {
-                    "name": "studyMostCasesIntent",
+                    "name": "StudyMostCasesIntent",
                     "slots": [],
                     "samples": [
                         "Which cancer type has the largest number of patients",
@@ -181,7 +181,7 @@
                     ]
                 },
                 {
-                    "name": "mutationGeneStudyMostPercentIntent",
+                    "name": "MutationGeneStudyMostPercentIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -198,7 +198,7 @@
                     ]
                 },
                 {
-                    "name": "mutationStudyGeneMutclassCountIntent",
+                    "name": "MutationStudyGeneMutclassCountIntent",
                     "slots": [
                         {
                             "name": "study",
@@ -219,7 +219,7 @@
                     ]
                 },
                 {
-                    "name": "mutationGeneMutclassCountIntent",
+                    "name": "MutationGeneMutclassCountIntent",
                     "slots": [
                         {
                             "name": "mutclass",
@@ -236,7 +236,7 @@
                     ]
                 },
                 {
-                    "name": "correlationGeneStudyIntent",
+                    "name": "CorrelationGeneStudyIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -254,7 +254,7 @@
                     ]
                 },
                 {
-                    "name": "correlationPosGeneStudyIntent",
+                    "name": "CorrelationPosGeneStudyIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -272,7 +272,7 @@
                     ]
                 },
                 {
-                    "name": "correlationNegGeneStudyIntent",
+                    "name": "CorrelationNegGeneStudyIntent",
                     "slots": [
                         {
                             "name": "gene",
@@ -290,7 +290,7 @@
                     ]
                 },
                 {
-                    "name": "mostMutatedGeneStudyIntent",
+                    "name": "MostMutatedGeneStudyIntent",
                     "slots": [
                         {
                             "name": "study",
