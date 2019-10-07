@@ -1,10 +1,28 @@
-# Melvin - Genomic Explorer
+# Melvin - The Genomic Explorer
 
-open melvin explorer
+Open melvin
 
-what is ACTG1
+### Search Gene
+What is ACTG1
 
-what percentage of breast cancer patients have an amplification at tp53
+### Copy Number Variations
+What percentage of breast cancer patients have a deletion at cdh1
 
-what percentage of breast cancer patients have copy number changes at tp53
+What percentage of breast cancer patients have an amplification at tp53
 
+What percentage of breast cancer patients have copy number changes at tp53
+
+### Mutations
+How many patients have a TP53 mutation
+
+How many breast cancer patients have a CDH1 mutation
+
+What percentage of patients have a TP53 mutation
+
+What percentage of breast cancer patients have a TP53 mutation
+
+
+## Navigation Flow
+
+### Start with a gene
+Tell me about TP53
