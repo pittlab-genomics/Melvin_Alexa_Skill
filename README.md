@@ -26,3 +26,8 @@ What percentage of breast cancer patients have a TP53 mutation
 
 ### Start with a gene
 Tell me about TP53
+
+### Mutations flow
+Show me mutations
+
+Show me the most affected domains

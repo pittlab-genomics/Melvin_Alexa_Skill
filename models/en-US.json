@@ -371,31 +371,101 @@
                     ],
                     "samples": [
                         "Look at {gene}",
-                        "Tell me about {query}"
+                        "Tell me about {query}",
+                        "Tell us about {query}"
+                    ]
+                },
+                {
+                    "name": "NavigateReset",
+                    "slots": [],
+                    "samples": [
+                        "start over"
+                    ]
+                },
+                {
+                    "name": "NavigateGeneDefinitionIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "what does it do",
+                        "what does {query} do"
                     ]
                 },
                 {
                     "name": "NavigateMutationsIntent",
                     "slots": [
                         {
-                            "name": "study",
-                            "type": "STUDY"
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
                         }
                     ],
                     "samples": [
-                        "Show me mutations in {study}"
+                        "Show me mutations in {query}",
+                        "Show me mutations",
+                        "Show mutations"
+                    ]
+                },
+                {
+                    "name": "NavigateMutationsDomainIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "show me the most affected domains in {query}",
+                        "show me the most affected domains",
+                        "Show domains in {query}",
+                        "show domains",
+                        "show me domains in {query}",
+                        "show me domains"
                     ]
                 },
                 {
                     "name": "NavigateCNVIntent",
                     "slots": [
                         {
-                            "name": "study",
-                            "type": "STUDY"
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
                         }
                     ],
                     "samples": [
-                        "Show me copy number variations in {study}"
+                        "Show me copy number variations in {query}",
+                        "Show me copy number variations",
+                        "Show copy number variations"
+                    ]
+                },
+                {
+                    "name": "NavigateCNVAmplificationsIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "Show me amplifications in {query}",
+                        "Show me amplifications",
+                        "Show amplifications"
+                    ]
+                },
+                {
+                    "name": "NavigateCNVDeletionsIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "Show me deletions in {query}",
+                        "Show me deletions",
+                        "Show deletions"
                     ]
                 },
                 {
@@ -409,6 +479,14 @@
                     "samples": [
                         "How about {query}",
                         "What about {query}"
+                    ]
+                },
+                {
+                    "name": "NavigateEmailIntent",
+                    "slots": [],
+                    "samples": [
+                        "email that to me",
+                        "send that to me"
                     ]
                 }
             ],
