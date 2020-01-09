@@ -31,3 +31,13 @@ Tell me about TP53
 Show me mutations
 
 Show me the most affected domains
+
+
+### Clinical Trials
+search for nearby clinical trials
+
+search for clinical trials near Boston
+
+search for clinical trials within 20 kilometres
+
+search for clinical trials within 10 kilometres of London

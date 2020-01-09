@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "melvin",
+            "invocationName": "mel vin",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -85,8 +85,7 @@
                     ],
                     "samples": [
                         "what is {gene} gene",
-                        "what is {gene}",
-                        "search for {gene_query}"
+                        "what is {gene}"
                     ]
                 },
                 {
@@ -379,7 +378,10 @@
                     "name": "NavigateReset",
                     "slots": [],
                     "samples": [
-                        "start over"
+                        "start over",
+                        "reset",
+                        "clear everything",
+                        "clear all"
                     ]
                 },
                 {
@@ -487,6 +489,48 @@
                     "samples": [
                         "email that to me",
                         "send that to me"
+                    ]
+                },
+                {
+                    "name": "ClinicalTrialsNearby",
+                    "slots": [
+                        {
+                            "name": "location_query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "search for nearby clinical trials",
+                        "search for nearby trials",
+                        "search for clinical trials near {location_query}",
+                        "search for trials near {location_query}"
+                    ]
+                },
+                {
+                    "name": "ClinicalTrialsWithin",
+                    "slots": [
+                        {
+                            "name": "distance",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "location",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "search for clinical trials within {distance} kilometres",
+                        "search for trials within {distance} kilometres",
+                        "search for clinical trials within {distance} kilometres of {location}",
+                        "search for trials within {distance} kilometres of {location}"
+                    ]
+                },
+                {
+                    "name": "ClinicalTrialClosest",
+                    "slots": [],
+                    "samples": [
+                        "search for the closest clinical trial",
+                        "search for the closest trial"
                     ]
                 }
             ],
@@ -7215,6 +7259,16 @@
                             "id": "1",
                             "name": {
                                 "value": "intron"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CUSTOM_SLOT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "this is required"
                             }
                         }
                     ]
