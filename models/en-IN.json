@@ -84,7 +84,7 @@
                         }
                     ],
                     "samples": [
-                        "what is {gene} gene",
+                        "what is {gene_query}",
                         "what is {gene}"
                     ]
                 },
