@@ -480,7 +480,10 @@
                     ],
                     "samples": [
                         "How about {query}",
-                        "What about {query}"
+                        "What about {query}",
+                        "show me in {query}",
+                        "show me for {query}",
+                        "show me {query}"
                     ]
                 },
                 {
