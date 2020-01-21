@@ -398,6 +398,21 @@
                     ]
                 },
                 {
+                    "name": "NavigateOverviewIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "show overview",
+                        "show me overview",
+                        "show overview for {query}",
+                        "show me overview for {query}"
+                    ]
+                },
+                {
                     "name": "NavigateMutationsIntent",
                     "slots": [
                         {
