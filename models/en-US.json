@@ -388,10 +388,17 @@
                 },
                 {
                     "name": "NavigateRestoreSessionIntent",
-                    "slots": [],
+                    "slots": [
+                        {
+                            "name": "count",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
                     "samples": [
                         "restore session",
-                        "resume session"
+                        "resume session",
+                        "restore last {count} analyses",
+                        "restore last {count} results"
                     ]
                 },
                 {
@@ -513,6 +520,18 @@
                         "Show me deletions in {query}",
                         "Show me deletions",
                         "Show deletions"
+                    ]
+                },
+                {
+                    "name": "NavigateCompareIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "compare with {query}"
                     ]
                 },
                 {
