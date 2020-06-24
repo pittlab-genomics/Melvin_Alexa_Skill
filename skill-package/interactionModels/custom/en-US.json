@@ -1,0 +1,796 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "melvin",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "SearchGeneIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            },
+            {
+              "name": "gene_query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "what is {gene_query}",
+            "what is {gene}"
+          ]
+        },
+        {
+          "name": "AverageGeneExpressionIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            },
+            {
+              "name": "study",
+              "type": "STUDY"
+            }
+          ],
+          "samples": [
+            "what is the average expression of {gene} in {study} cancer",
+            "what is the average expression value of {gene} in {study} cancer"
+          ]
+        },
+        {
+          "name": "CNVAmplificationGeneIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "What percentage of {study} cancer patients have an amplification in {gene}",
+            "What percentage of {study} cancer patients have an amplification at {gene}"
+          ]
+        },
+        {
+          "name": "CNVDeletionGeneIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "What percentage of {study} cancer patients have a deletion in {gene}",
+            "What percentage of {study} cancer patients have a deletion at {gene} "
+          ]
+        },
+        {
+          "name": "CNVAlterationGeneIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "What percentage of {study} cancer patients have copy number changes in {gene}",
+            "What percentage of {study} cancer patients have copy number changes at {gene}",
+            "What percentage of {study} cancer patients have copy number alterations in {gene}",
+            "What percentage of {study} cancer patients have copy number alterations at {gene}"
+          ]
+        },
+        {
+          "name": "MutationGeneCountIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "how many patients contain a {gene} mutation",
+            "how many patients have a mutated {gene}",
+            "How many patients have a {gene} mutation"
+          ]
+        },
+        {
+          "name": "MutationStudyGeneCountIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "how many {study} cancer patients contain a {gene} mutation",
+            "how many {study} cancer patients have a mutated {gene}",
+            "how many {study} cancer patients have a {gene} mutation"
+          ]
+        },
+        {
+          "name": "MutationGenePercentIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "what percentage of patients contain a {gene} mutation",
+            "what percentage of patients have a mutated {gene}",
+            "what percentage of patients have a {gene} mutation"
+          ]
+        },
+        {
+          "name": "MutationStudyGenePercentIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "what is the percentage of {gene} mutation in {study} cancer patients",
+            "what percentage of {study} cancer patients contain a {gene} mutation",
+            "what percentage of {study} cancer patients have a mutated {gene}",
+            "what percentage of {study} cancer patients have a {gene} mutation"
+          ]
+        },
+        {
+          "name": "StudyMostCasesIntent",
+          "slots": [],
+          "samples": [
+            "Which cancer type has the largest number of patients",
+            "Which cancer type has the most number of patients",
+            "Which cancer type has the greatest number of patients"
+          ]
+        },
+        {
+          "name": "MutationGeneStudyMostPercentIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "Which cancer type has the greatest proportion of {gene} mutation",
+            "Which cancer type has the largest proportion of {gene} mutation",
+            "Which cancer type has the greatest number of {gene} mutation",
+            "Which cancer type has the largest number of {gene} mutation",
+            "Which cancer type has the largest percentage of {gene} mutation",
+            "Which cancer type has the greatest percentage of {gene} mutation"
+          ]
+        },
+        {
+          "name": "MutationStudyGeneMutclassCountIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            },
+            {
+              "name": "mutclass",
+              "type": "MUTCLASS"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "In {study} cancer how many {mutclass} mutations are present in {gene} gene",
+            "In {study} cancer how many {mutclass} mutations are present in {gene}"
+          ]
+        },
+        {
+          "name": "MutationGeneMutclassCountIntent",
+          "slots": [
+            {
+              "name": "mutclass",
+              "type": "MUTCLASS"
+            },
+            {
+              "name": "gene",
+              "type": "GENE"
+            }
+          ],
+          "samples": [
+            "how many {mutclass} mutations are present in {gene} gene",
+            "how many {mutclass} mutations are present in {gene} "
+          ]
+        },
+        {
+          "name": "CorrelationGeneStudyIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            },
+            {
+              "name": "study",
+              "type": "STUDY"
+            }
+          ],
+          "samples": [
+            "what are the top five genes correlated with {gene} in {study} cancer",
+            "Which genes are most correlated with {gene} in {study} cancer",
+            "What genes are most correlated with {gene} in {study} cancer"
+          ]
+        },
+        {
+          "name": "CorrelationPosGeneStudyIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            },
+            {
+              "name": "study",
+              "type": "STUDY"
+            }
+          ],
+          "samples": [
+            "what are the top five genes positively correlated with {gene} in {study} cancer",
+            "which genes are most positively correlated with {gene} in {study} cancer",
+            "What genes are most positively correlated with {gene} in {study} cancer"
+          ]
+        },
+        {
+          "name": "CorrelationNegGeneStudyIntent",
+          "slots": [
+            {
+              "name": "gene",
+              "type": "GENE"
+            },
+            {
+              "name": "study",
+              "type": "STUDY"
+            }
+          ],
+          "samples": [
+            "what are the top five genes negatively correlated with {gene} in {study} cancer",
+            "which genes are most negatively correlated with {gene} in {study} cancer",
+            "what genes are most negatively correlated with {gene} in {study} cancer"
+          ]
+        },
+        {
+          "name": "MostMutatedGeneStudyIntent",
+          "slots": [
+            {
+              "name": "study",
+              "type": "STUDY"
+            }
+          ],
+          "samples": [
+            "which is the most mutated gene in {study} cancer",
+            "what is the most mutated gene in {study} cancer",
+            "what gene is most mutated in {study} cancer",
+            "which gene is most mutated in {study} cancer"
+          ]
+        },
+        {
+          "name": "NavigateStartIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Tell me about {query}",
+            "Tell us about {query}"
+          ]
+        },
+        {
+          "name": "NavigateResetIntent",
+          "slots": [],
+          "samples": [
+            "start over",
+            "reset",
+            "clear everything",
+            "clear all"
+          ]
+        },
+        {
+          "name": "NavigateGoBackIntent",
+          "slots": [],
+          "samples": [
+            "go back"
+          ]
+        },
+        {
+          "name": "NavigateRestoreSessionIntent",
+          "slots": [
+            {
+              "name": "count",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "duration",
+              "type": "AMAZON.DURATION"
+            }
+          ],
+          "samples": [
+            "restore session",
+            "resume session",
+            "restore last {count} analyses",
+            "restore last {count} results",
+            "restore results within {duration}",
+            "restore from {duration}"
+          ]
+        },
+        {
+          "name": "NavigateRepeatIntent",
+          "slots": [],
+          "samples": [
+            "repeat that",
+            "show me the last analysis",
+            "where am I",
+            "repeat last"
+          ]
+        },
+        {
+          "name": "NavigateGeneDefinitionIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "what does it do",
+            "what does {query} do"
+          ]
+        },
+        {
+          "name": "NavigateOverviewIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "show overview",
+            "show me overview",
+            "show overview for {query}",
+            "show me overview for {query}"
+          ]
+        },
+        {
+          "name": "NavigateMutationsIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Show me mutations in {query}",
+            "Show me mutations",
+            "Show mutations"
+          ]
+        },
+        {
+          "name": "NavigateMutationsDomainIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "show me the most affected domains in {query}",
+            "show me the most affected domains",
+            "Show domains in {query}",
+            "show domains",
+            "show me domains in {query}",
+            "show me domains"
+          ]
+        },
+        {
+          "name": "NavigateCNVIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Show me copy number variations in {query}",
+            "Show me copy number variations",
+            "Show copy number variations"
+          ]
+        },
+        {
+          "name": "NavigateCNVAmplificationsIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Show me amplifications in {query}",
+            "Show me amplifications",
+            "Show amplifications"
+          ]
+        },
+        {
+          "name": "NavigateCNVDeletionsIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Show me deletions in {query}",
+            "Show me deletions",
+            "Show deletions"
+          ]
+        },
+        {
+          "name": "NavigateCompareIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "compare with {query}"
+          ]
+        },
+        {
+          "name": "NavigateSplitbyIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "splitby_query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "split by {query}"
+          ]
+        },
+        {
+          "name": "NavigateJoinFilterIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "How about {query}",
+            "What about {query}",
+            "show me in {query}",
+            "show me for {query}",
+            "show me {query}"
+          ]
+        },
+        {
+          "name": "NavigateEmailIntent",
+          "slots": [
+            {
+              "name": "count",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "duration",
+              "type": "AMAZON.DURATION"
+            }
+          ],
+          "samples": [
+            "email that to me",
+            "send that to me",
+            "email last {count} results",
+            "send last {count} results",
+            "email results within {duration}",
+            "send results within {duration}"
+          ]
+        },
+        {
+          "name": "ClinicalTrialsNearby",
+          "slots": [
+            {
+              "name": "location_query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "search for nearby clinical trials",
+            "search for nearby trials",
+            "search for clinical trials near {location_query}",
+            "search for trials near {location_query}"
+          ]
+        },
+        {
+          "name": "ClinicalTrialsWithin",
+          "slots": [
+            {
+              "name": "distance",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "location",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "search for clinical trials within {distance} kilometres",
+            "search for trials within {distance} kilometres",
+            "search for clinical trials within {distance} kilometres of {location}",
+            "search for trials within {distance} kilometres of {location}"
+          ]
+        },
+        {
+          "name": "ClinicalTrialClosest",
+          "slots": [],
+          "samples": [
+            "search for the closest clinical trial",
+            "search for the closest trial"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "GENE",
+          "values": [
+            {
+              "id": "ACVR2A",
+              "name": {
+                "value": "ACVR2A",
+                "synonyms": [
+                  "A C V R 2 A"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "STUDY",
+          "values": [
+            {
+              "id": "SARC",
+              "name": {
+                "value": "sarcoma"
+              }
+            },
+            {
+              "id": "OV",
+              "name": {
+                "value": "ovarian"
+              }
+            },
+            {
+              "id": "STAD",
+              "name": {
+                "value": "stomach"
+              }
+            },
+            {
+              "id": "BRCA",
+              "name": {
+                "value": "breast"
+              }
+            }
+          ]
+        },
+        {
+          "name": "MUTCLASS",
+          "values": [
+            {
+              "id": "14",
+              "name": {
+                "value": "5 prime flank"
+              }
+            },
+            {
+              "id": "13",
+              "name": {
+                "value": "5 prime UTR"
+              }
+            },
+            {
+              "id": "12",
+              "name": {
+                "value": "3 prime flank"
+              }
+            },
+            {
+              "id": "11",
+              "name": {
+                "value": "3 prime UTR"
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "translation start site"
+              }
+            },
+            {
+              "id": "9",
+              "name": {
+                "value": "IGR"
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "RNA"
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "silent"
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "splice region"
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "splice site"
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "nonstop"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "nonsense"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "missense"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "intron"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "NavigateSplitbyIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "splitby_query",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Slot.NavigateSplitbyIntent.splitby_query"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.NavigateSplitbyIntent.splitby_query",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which gene or cancer type would you like to split by?"
+          }
+        ]
+      }
+    ]
+  }
+}
