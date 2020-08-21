@@ -519,6 +519,23 @@
           ]
         },
         {
+          "name": "NavigateExpressionsIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "show me expressions in {query}",
+            "show me expressions",
+            "show me gene expressions",
+            "show expressions in {query}",
+            "show expressions",
+            "show gene expressions"
+          ]
+        },
+        {
           "name": "NavigateCompareIntent",
           "slots": [
             {
