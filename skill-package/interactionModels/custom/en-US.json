@@ -485,9 +485,11 @@
             }
           ],
           "samples": [
-            "Show me copy number variations in {query}",
-            "Show me copy number variations",
-            "Show copy number variations"
+            "Show me copy number alterations in {query}",
+            "Show me copy number alterations",
+            "Show copy number alterations",
+            "Show copy number variations",
+            "Show copy number variations in {query}"
           ]
         },
         {
@@ -519,7 +521,7 @@
           ]
         },
         {
-          "name": "NavigateExpressionsIntent",
+          "name": "NavigateExpressionIntent",
           "slots": [
             {
               "name": "query",
@@ -527,12 +529,13 @@
             }
           ],
           "samples": [
-            "show me expressions in {query}",
-            "show me expressions",
-            "show me gene expressions",
-            "show expressions in {query}",
-            "show expressions",
-            "show gene expressions"
+            "show me expression in {query}",
+            "show me expression",
+            "show me gene expression",
+            "show expression in {query}",
+            "show expression",
+            "show gene expression",
+            "show gene expression in {query}"
           ]
         },
         {
