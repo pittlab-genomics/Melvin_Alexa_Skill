@@ -357,19 +357,6 @@
           ]
         },
         {
-          "name": "NavigateStartIntent",
-          "slots": [
-            {
-              "name": "query",
-              "type": "AMAZON.SearchQuery"
-            }
-          ],
-          "samples": [
-            "Tell me about {query}",
-            "Tell us about {query}"
-          ]
-        },
-        {
           "name": "NavigateResetIntent",
           "slots": [],
           "samples": [
@@ -575,11 +562,14 @@
             }
           ],
           "samples": [
-            "How about {query}",
-            "What about {query}",
+            "how about {query}",
+            "what about {query}",
             "show me in {query}",
             "show me for {query}",
-            "show me {query}"
+            "show me {query}",
+            "tell me about {query}",
+            "tell me {query}",
+            "look at {query}"
           ]
         },
         {
