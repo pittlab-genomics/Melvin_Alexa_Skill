@@ -332,12 +332,17 @@
               "type": "AMAZON.SearchQuery"
             },
             {
-              "name": "splitby_query",
+              "name": "dtype_query",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "gene_query",
               "type": "AMAZON.SearchQuery"
             }
           ],
           "samples": [
-            "split by {query}"
+            "split by {query}",
+            "splitby {query}"
           ]
         },
         {
@@ -566,12 +571,30 @@
           "prompts": {},
           "slots": [
             {
-              "name": "splitby_query",
+              "name": "query",
               "type": "AMAZON.SearchQuery",
               "confirmationRequired": false,
-              "elicitationRequired": true,
+              "elicitationRequired": false,
               "prompts": {
-                "elicitation": "Elicit.Slot.NavigateSplitbyIntent.splitby_query"
+                "elicitation": "Elicit.Slot.NavigateSplitbyIntent.query"
+              }
+            },
+            {
+              "name": "dtype_query",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.NavigateSplitbyIntent.dtype_query"
+              }
+            },
+            {
+              "name": "gene_query",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.NavigateSplitbyIntent.gene_query"
               }
             }
           ]
@@ -580,11 +603,29 @@
     },
     "prompts": [
       {
-        "id": "Elicit.Slot.NavigateSplitbyIntent.splitby_query",
+        "id": "Elicit.Slot.NavigateSplitbyIntent.dtype_query",
         "variations": [
           {
             "type": "PlainText",
-            "value": "Which gene or cancer type would you like to split by?"
+            "value": "Which data type would you like to split by?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.NavigateSplitbyIntent.gene_query",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which gene would you like to split by?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.NavigateSplitbyIntent.query",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which gene or data type would you like to split by?"
           }
         ]
       }
