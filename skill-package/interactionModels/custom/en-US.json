@@ -329,15 +329,24 @@
           "slots": [
             {
               "name": "query",
-              "type": "AMAZON.SearchQuery"
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{query}"
+              ]
             },
             {
               "name": "dtype_query",
-              "type": "AMAZON.SearchQuery"
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{dtype_query}"
+              ]
             },
             {
               "name": "gene_query",
-              "type": "AMAZON.SearchQuery"
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{gene_query}"
+              ]
             }
           ],
           "samples": [
@@ -574,7 +583,7 @@
               "name": "query",
               "type": "AMAZON.SearchQuery",
               "confirmationRequired": false,
-              "elicitationRequired": false,
+              "elicitationRequired": true,
               "prompts": {
                 "elicitation": "Elicit.Slot.NavigateSplitbyIntent.query"
               }
@@ -583,7 +592,7 @@
               "name": "dtype_query",
               "type": "AMAZON.SearchQuery",
               "confirmationRequired": false,
-              "elicitationRequired": false,
+              "elicitationRequired": true,
               "prompts": {
                 "elicitation": "Elicit.Slot.NavigateSplitbyIntent.dtype_query"
               }
@@ -592,7 +601,7 @@
               "name": "gene_query",
               "type": "AMAZON.SearchQuery",
               "confirmationRequired": false,
-              "elicitationRequired": false,
+              "elicitationRequired": true,
               "prompts": {
                 "elicitation": "Elicit.Slot.NavigateSplitbyIntent.gene_query"
               }
