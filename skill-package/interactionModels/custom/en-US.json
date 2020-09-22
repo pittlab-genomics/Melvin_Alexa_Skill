@@ -251,7 +251,7 @@
           ]
         },
         {
-          "name": "NavigateCNVIntent",
+          "name": "NavigateCNAIntent",
           "slots": [
             {
               "name": "query",
@@ -267,7 +267,7 @@
           ]
         },
         {
-          "name": "NavigateCNVAmplificationsIntent",
+          "name": "NavigateCNAAmplificationsIntent",
           "slots": [
             {
               "name": "query",
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "name": "NavigateCNVDeletionsIntent",
+          "name": "NavigateCNADeletionsIntent",
           "slots": [
             {
               "name": "query",
@@ -321,7 +321,8 @@
             }
           ],
           "samples": [
-            "compare with {query}"
+            "compare with {query}",
+            "compare to {query}"
           ]
         },
         {
