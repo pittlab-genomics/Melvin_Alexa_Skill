@@ -186,7 +186,7 @@
           "slots": [],
           "samples": [
             "repeat that",
-            "show me the last analysis",
+            "show last analysis",
             "where am I",
             "repeat last"
           ]
@@ -214,9 +214,7 @@
           ],
           "samples": [
             "show overview",
-            "show me overview",
-            "show overview for {query}",
-            "show me overview for {query}"
+            "show overview for {query}"
           ]
         },
         {
@@ -228,13 +226,12 @@
             }
           ],
           "samples": [
-            "Show me mutations in {query}",
-            "Show me mutations",
-            "Show mutations"
+            "show mutations in {query}",
+            "show mutations"
           ]
         },
         {
-          "name": "NavigateMutationsDomainIntent",
+          "name": "NavigateMutationDomainsIntent",
           "slots": [
             {
               "name": "query",
@@ -242,12 +239,10 @@
             }
           ],
           "samples": [
-            "show me the most affected domains in {query}",
-            "show me the most affected domains",
-            "Show domains in {query}",
-            "show domains",
-            "show me domains in {query}",
-            "show me domains"
+            "show most affected domains in {query}",
+            "show domains in {query}",
+            "show most affected domains",            
+            "show domains"
           ]
         },
         {
@@ -259,15 +254,14 @@
             }
           ],
           "samples": [
-            "Show me copy number alterations in {query}",
-            "Show me copy number alterations",
-            "Show copy number alterations",
-            "Show copy number variations",
-            "Show copy number variations in {query}"
+            "show copy number alterations in {query}",
+            "show copy number variations in {query}",
+            "show copy number alterations",
+            "show copy number variations"            
           ]
         },
         {
-          "name": "NavigateCNAAmplificationsIntent",
+          "name": "NavigateGainIntent",
           "slots": [
             {
               "name": "query",
@@ -275,13 +269,14 @@
             }
           ],
           "samples": [
-            "Show me amplifications in {query}",
-            "Show me amplifications",
-            "Show amplifications"
+            "show amplifications in {query}",
+            "show gain in {query}",
+            "show amplifications",
+            "show gain"
           ]
         },
         {
-          "name": "NavigateCNADeletionsIntent",
+          "name": "NavigateLossIntent",
           "slots": [
             {
               "name": "query",
@@ -289,9 +284,10 @@
             }
           ],
           "samples": [
-            "Show me deletions in {query}",
-            "Show me deletions",
-            "Show deletions"
+            "show deletions in {query}",
+            "show loss in {query}",
+            "show deletions",
+            "show loss"
           ]
         },
         {
@@ -303,13 +299,10 @@
             }
           ],
           "samples": [
-            "show me expression in {query}",
-            "show me expression",
-            "show me gene expression",
             "show expression in {query}",
+            "show gene expression in {query}",
             "show expression",
-            "show gene expression",
-            "show gene expression in {query}"
+            "show gene expression"            
           ]
         },
         {
