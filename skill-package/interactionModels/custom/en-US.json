@@ -157,7 +157,7 @@
           "name": "NavigateGoBackIntent",
           "slots": [],
           "samples": [
-            "go back"
+            "step back"
           ]
         },
         {
@@ -241,7 +241,7 @@
           "samples": [
             "show most affected domains in {query}",
             "show domains in {query}",
-            "show most affected domains",            
+            "show most affected domains",
             "show domains"
           ]
         },
@@ -257,7 +257,7 @@
             "show copy number alterations in {query}",
             "show copy number variations in {query}",
             "show copy number alterations",
-            "show copy number variations"            
+            "show copy number variations"
           ]
         },
         {
@@ -302,7 +302,7 @@
             "show expression in {query}",
             "show gene expression in {query}",
             "show expression",
-            "show gene expression"            
+            "show gene expression"
           ]
         },
         {
@@ -345,7 +345,9 @@
           ],
           "samples": [
             "split by {query}",
-            "splitby {query}"
+            "splitby {query}",
+            "split by",
+            "splitby"
           ]
         },
         {
