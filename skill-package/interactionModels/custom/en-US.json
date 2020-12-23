@@ -205,6 +205,19 @@
           ]
         },
         {
+          "name": "NavigateGeneTargetIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "is it targetable",
+            "is {query} targetable"
+          ]
+        },
+        {
           "name": "NavigateOverviewIntent",
           "slots": [
             {
@@ -232,6 +245,34 @@
         },
         {
           "name": "NavigateMutationDomainsIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "show most affected domains in {query}",
+            "show domains in {query}",
+            "show most affected domains",
+            "show domains"
+          ]
+        },
+        {
+          "name": "NavigateIndelsIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "show indels in {query}",
+            "show indels"
+          ]
+        },
+        {
+          "name": "NavigateIndelDomainsIntent",
           "slots": [
             {
               "name": "query",
