@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "melvin",
+      "invocationName": "melvin genomics",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",

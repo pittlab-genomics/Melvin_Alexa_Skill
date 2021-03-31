@@ -5,7 +5,7 @@
         "en-US": {
           "summary": "Ask Melvin for gene-centric information pertaining 4 cancer types",
           "examplePhrases": [
-            "Alexa, open Melvin"
+            "Alexa, open Melvin Genomics"
           ],
           "keywords": [],
           "name": "Melvin",
