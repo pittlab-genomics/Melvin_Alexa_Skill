@@ -3,13 +3,15 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Ask Melvin for gene-centric information pertaining 4 cancer types",
+          "summary": "Melvin Alexa skill - voice based genomics analytics tool",
           "examplePhrases": [
-            "Alexa, open Melvin Genomics"
+            "Alexa, open Melvin Genomics",
+            "Alexa, tell me about TP53",
+            "Alexa, show me mutations"
           ],
           "keywords": [],
           "name": "Melvin",
-          "description": "Ask Melvin for gene-centric information pertaining 4 cancer types",
+          "description": "Melvin Alexa skill is the first voice based genomics analytics tool. \n The information in this skill is provided for informational and educational purposes only. It is not a substitute for professional medical advice, treatment or diagnosis. Call your doctor to receive medical advice. If you think you may have a medical emergency, please dial your local emergency response phone number",
           "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
           "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
         }
