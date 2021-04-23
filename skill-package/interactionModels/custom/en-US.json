@@ -121,12 +121,6 @@
         },
         {
           "name": "NavigateGeneDefinitionIntent",
-          "slots": [
-            {
-              "name": "query",
-              "type": "AMAZON.SearchQuery"
-            }
-          ],
           "samples": [
             "what does it do",
             "what does this gene do",
@@ -141,12 +135,6 @@
         },
         {
           "name": "NavigateGeneTargetIntent",
-          "slots": [
-            {
-              "name": "query",
-              "type": "AMAZON.SearchQuery"
-            }
-          ],
           "samples": [
             "is it targetable",
             "is this gene targetable",
@@ -219,8 +207,13 @@
             "show me for {query}",
             "show {query}",
             "show me {query}",
+            "show us {query}",
+            "show us in {query}",
+            "show us for {query}",
             "tell me about {query}",
+            "tell us about {query}",
             "tell me {query}",
+            "tell us {query}",
             "look at {query}"
           ]
         },
