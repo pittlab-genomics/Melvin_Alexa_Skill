@@ -129,7 +129,14 @@
           ],
           "samples": [
             "what does it do",
-            "what does {query} do"
+            "what does this gene do",
+            "what does this protein do",
+            "definition",
+            "gene definition",
+            "protein definition",
+            "what is its function",
+            "what is the gene's function",
+            "what is the protein's function"
           ]
         },
         {
@@ -142,7 +149,14 @@
           ],
           "samples": [
             "is it targetable",
-            "is {query} targetable"
+            "is this gene targetable",
+            "is this protein targetable",
+            "is it druggable",
+            "is this gene druggable",
+            "is this protein druggable",
+            "is it actionable",
+            "is this gene actionable",
+            "is this protein actionable"
           ]
         },
         {
@@ -203,6 +217,7 @@
             "what about {query}",
             "show me in {query}",
             "show me for {query}",
+            "show {query}",
             "show me {query}",
             "tell me about {query}",
             "tell me {query}",

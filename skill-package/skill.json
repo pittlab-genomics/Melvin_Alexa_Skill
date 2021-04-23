@@ -3,15 +3,15 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Melvin Alexa skill - voice based genomics analytics tool",
+          "summary": "Melvin is a voice based cancer genomics analysis tool to interogate data from The Cancer Genome Atlas (TCGA).",
           "examplePhrases": [
             "Alexa, open Melvin Genomics",
-            "Alexa, tell me about TP53",
-            "Alexa, show me mutations"
+            "Alexa, open Melvin Genomics and tell me about TP53",
+            "Alexa, open Melvin Genomics and show me breast cancer"
           ],
           "keywords": [],
           "name": "Melvin",
-          "description": "Melvin Alexa skill is the first voice based genomics analytics tool. \n The information in this skill is provided for informational and educational purposes only. It is not a substitute for professional medical advice, treatment or diagnosis. Call your doctor to receive medical advice. If you think you may have a medical emergency, please dial your local emergency response phone number",
+          "description": "Melvin is a conversational interface to cancer genomics data. These data are often hidden within databases or web-based graphical user interfaces – making them difficult to access for most users. Melvin provides an easy way to query and perform analytics over these datasets via voice. Want to explore which genes are most mutated in breast cancer? Interested to see which cancer types have the most TP53 deletions? Maybe you want to determine if GATA3 expression in breast cancer is higher in GATA3 mutant samples? Melvin allows you to facilitate all of these analyses and more through conversational, compound queries.\n\nJust start by saying by saying “Tell me about...” followed by the name of a gene, data type (e.g. mutations, indels, CNAs, expression, etc.), or a cancer type. Melvin will remember your conversation and provide biologically relevant information after each interaction. For example, saying “Tell me about breast cancer” followed by “Tell me about mutations” would provide a summary of the most mutated genes in breast cancer. Melvin is multi-modal and will provide both audio and graphical responses. For the best Melvin experience, we recommend using a device with a screen (mobile phone, Echo Show, Fire TV Stick, etc.). Once you explore Melvin, you will find that it has many powerful functionalities such as saving and restoring analyses, performing statistical comparisons, and providing detailed gene information.\n\nWe highly recommend visiting https://pittgenomics.gitlab.io/melvin_docs/ where you will find documentation to all of Melvin’s capabilities and example conversations in the form of text, gifs, and videos.\n\nData\n* Mutational and copy number data are from The Cancer Genome Atlas (TCGA) as provided by the Genomic Data Commons (GDC)\n* TCGA gene expression data are from the Xenia web portal (TOIL dataset)\n* Only genes present in the Cancer Gene Census (CGC) are supported currently\n* Please see our documentation (https://pittgenomics.gitlab.io/melvin_docs/) for further data details\n\nMelvin is meant to provide information only. It does not provide medical advice, diagnosis, or treatment. Please seek the advice of a physician or qualified health professional regarding any medical condition, and never disregard said advice based on information provided by Melvin.",
           "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
           "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
         }
