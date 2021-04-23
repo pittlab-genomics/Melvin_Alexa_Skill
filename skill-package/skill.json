@@ -83,10 +83,17 @@
       }
     },
     "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::profile:email:read"
+      }
+    ],
     "privacyAndCompliance": {
       "allowsPurchases": false,
       "locales": {
-        "en-US": {}
+        "en-US": {
+          "privacyPolicyUrl": "https://pittgenomics.gitlab.io/melvin_docs/docs/policies/privacy/"
+        }
       },
       "containsAds": false,
       "isExportCompliant": true,
