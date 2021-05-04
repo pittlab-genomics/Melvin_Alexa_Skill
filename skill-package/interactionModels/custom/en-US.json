@@ -90,23 +90,10 @@
         },
         {
           "name": "NavigateRestoreSessionIntent",
-          "slots": [
-            {
-              "name": "count",
-              "type": "AMAZON.NUMBER"
-            },
-            {
-              "name": "duration",
-              "type": "AMAZON.DURATION"
-            }
-          ],
+          "slots": [],
           "samples": [
             "restore session",
-            "resume session",
-            "restore last {count} analyses",
-            "restore last {count} results",
-            "restore results within {duration}",
-            "restore from {duration}"
+            "resume session"
           ]
         },
         {
