@@ -71,12 +71,6 @@
             "type": "AUDIO_PLAYER"
           },
           {
-            "type": "CAN_FULFILL_INTENT_REQUEST"
-          },
-          {
-            "type": "RENDER_TEMPLATE"
-          },
-          {
             "type": "VIDEO_APP"
           }
         ]
@@ -92,13 +86,14 @@
       "allowsPurchases": false,
       "locales": {
         "en-US": {
-          "privacyPolicyUrl": "https://pittgenomics.gitlab.io/melvin_docs/docs/policies/privacy/"
+          "privacyPolicyUrl": "https://pittgenomics.gitlab.io/melvin_docs/docs/policies/privacy/",
+          "termsOfUseUrl": "https://pittgenomics.gitlab.io/melvin_docs/docs/policies/terms"
         }
       },
       "containsAds": false,
       "isExportCompliant": true,
       "isChildDirected": false,
-      "usesPersonalInfo": false
+      "usesPersonalInfo": true
     }
   }
 }
