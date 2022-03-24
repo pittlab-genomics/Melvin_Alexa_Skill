@@ -90,10 +90,23 @@
         },
         {
           "name": "NavigateRestoreSessionIntent",
-          "slots": [],
+          "slots": [
+            {
+              "name": "count",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "duration",
+              "type": "AMAZON.DURATION"
+            }
+          ],
           "samples": [
             "restore session",
-            "resume session"
+            "resume session",
+            "restore last {count} analyses",
+            "restore last {count} results",
+            "restore results within {duration}",
+            "restore from {duration}"
           ]
         },
         {
@@ -108,48 +121,28 @@
         },
         {
           "name": "NavigateGeneDefinitionIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
           "samples": [
             "what does it do",
-            "what does this gene do",
-            "what does this protein do",
-            "definition",
-            "gene definition",
-            "protein definition",
-            "what is its function",
-            "what is the gene's function",
-            "what is the protein's function"
+            "what does {query} do"
           ]
         },
         {
           "name": "NavigateGeneTargetIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
           "samples": [
             "is it targetable",
-            "is this gene targetable",
-            "is this protein targetable",
-            "is it druggable",
-            "is this gene druggable",
-            "is this protein druggable",
-            "is it actionable",
-            "is this gene actionable",
-            "is this protein actionable",
-            "therapeutic options",
-            "therapeutic options for this gene",
-            "therapeutic options for this protein",
-            "drug options",
-            "drug options for this gene",
-            "drug options for this protein",
-            "are there therapeutic options",
-            "are there therapeutic options for this gene",
-            "are there therapeutic options for this protein",
-            "are there drug options",
-            "are there drug options for this gene",
-            "are there drug options for this protein",
-            "which drugs can be used",
-            "which drugs can be used for this gene",
-            "which drugs can be used for this protein",
-            "which therapeutics can be used",
-            "which therapeutics can be used for this gene",
-            "which therapeutics can be used for this protein"
+            "is {query} targetable"
           ]
         },
         {
@@ -210,15 +203,9 @@
             "what about {query}",
             "show me in {query}",
             "show me for {query}",
-            "show {query}",
             "show me {query}",
-            "show us {query}",
-            "show us in {query}",
-            "show us for {query}",
             "tell me about {query}",
-            "tell us about {query}",
             "tell me {query}",
-            "tell us {query}",
             "look at {query}"
           ]
         },
@@ -279,6 +266,12 @@
               "name": {
                 "value": "custom mappings"
               }
+            },
+            {
+              "id": "BRIEF_MODE",
+              "name": {
+                "value": "brief mode"
+              }
             }
           ]
         }
@@ -320,7 +313,8 @@
             }
           ]
         }
-      ]
+      ],
+      "delegationStrategy": "SKILL_RESPONSE"
     },
     "prompts": [
       {
