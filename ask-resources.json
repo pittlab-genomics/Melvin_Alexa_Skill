@@ -1,13 +1,9 @@
 {
   "askcliResourcesVersion": "2020-03-31",
   "profiles": {
-    "default": {
+    "melvin": {
       "skillMetadata": {
         "src": "./skill-package"
-      },
-      "code": {},
-      "skillInfrastructure": {
-        "type": "@ask-cli/lambda-deployer"
       }
     }
   }

@@ -85,7 +85,9 @@
           "name": "NavigateGoBackIntent",
           "slots": [],
           "samples": [
-            "step back"
+            "step back",
+            "show me previous",
+            "show me previous analysis"
           ]
         },
         {
@@ -114,9 +116,9 @@
           "slots": [],
           "samples": [
             "repeat that",
+            "repeat last",
             "show last analysis",
-            "where am I",
-            "repeat last"
+            "where am I"
           ]
         },
         {
@@ -206,7 +208,8 @@
             "show me {query}",
             "tell me about {query}",
             "tell me {query}",
-            "look at {query}"
+            "look at {query}",
+            "look up {query}"
           ]
         },
         {

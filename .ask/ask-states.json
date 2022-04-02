@@ -1,12 +1,11 @@
 {
   "askcliStatesVersion": "2020-03-31",
   "profiles": {
-    "default": {
+    "melvin": {
       "skillId": "amzn1.ask.skill.b4093683-e7de-4469-8fa4-453711c5ee2d",
       "skillMetadata": {
-        "lastDeployHash": "yJhkYnA9J42+FUaUGNlmHwUZu34="
-      },
-      "code": {}
+        "lastDeployHash": "w469hWQEo7q0/isnEJbD4NAZ554="
+      }
     }
   }
 }
