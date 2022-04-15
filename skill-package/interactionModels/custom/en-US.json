@@ -144,7 +144,9 @@
           ],
           "samples": [
             "is it targetable",
-            "is {query} targetable"
+            "is {query} targetable",
+            "is it actionable",
+            "is {query} actionable"
           ]
         },
         {
